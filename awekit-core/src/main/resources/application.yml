@@ -1,0 +1,15 @@
+server:
+  port: 80
+  servlet:
+    context-path: /awekitcore
+
+spring:
+  application:
+    name: awekit-core
+  profiles:
+    active: prod
+  jmx:
+    default-domain: gateway_awekit_core
+
+awekit:
+  debug-mode: false
