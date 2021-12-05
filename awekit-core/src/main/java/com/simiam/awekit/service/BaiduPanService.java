@@ -1,11 +1,14 @@
 package com.simiam.awekit.service;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.simiam.awekit.Constants;
 import com.simiam.awekit.entity.Token;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.simiam.awekit.util.HttpsClientUtils;
+import org.apache.hadoop.hdfs.util.MD5FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
@@ -15,6 +18,8 @@ import org.springframework.util.CollectionUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -84,6 +89,81 @@ public class BaiduPanService implements InitializingBean {
         logger.info("The list-file-url is: {}", url);
         JSON json = HttpsClientUtils.httpJsonGet(url);
         resultMap.put("result", json);
+        return resultMap;
+    }
+
+    public Map<String, Object> uploadFile(String destDirPath, File file) {
+        Map<String, Object> resultMap = Maps.newHashMap();
+        String url1 = "https://pan.baidu.com/rest/2.0/xpan/file?method=precreate&access_token=" + getAccessToken();
+        logger.info("The pre-upload-file-url is: {}", url1);
+        JSONObject paramJson = new JSONObject();
+        String filePath = destDirPath + "/" + file.getName();
+        try {
+            filePath = URLEncoder.encode(filePath, Constants.UTF8);
+        } catch (UnsupportedEncodingException e) {
+            logger.error("Fail to encode file path: {}", filePath, e);
+        }
+        paramJson.put("path", filePath);
+        paramJson.put("size", file.length());
+        paramJson.put("isdir", 0);
+        paramJson.put("autoinit", 1);
+        paramJson.put("rtype", 3);
+        String fileMd5 = "";
+        try {
+            fileMd5 = MD5FileUtils.computeMd5ForFile(file).toString();
+            paramJson.put("block_list", Lists.newArrayList(fileMd5));
+
+        } catch (IOException e) {
+            logger.error("Fail to computeMd5 for file: {}", file.getAbsolutePath(), e);
+        }
+
+        JSON step1Json = HttpsClientUtils.httpJsonPost(url1, paramJson);
+        if (step1Json instanceof JSONObject) {
+            JSONObject obj1 = (JSONObject) step1Json;
+            int errNo = obj1.getIntValue("errno");
+            if (errNo != 0) {
+                resultMap.put("result", "Upload fail in step 1!");
+                return resultMap;
+            }
+            String path = obj1.getString("path");
+            String uploadId = obj1.getString("uploadid");
+            int returnType = obj1.getIntValue("return_type");
+            JSONArray arr = obj1.getJSONArray("block_list");
+            List<Integer> blockList = arr.toJavaList(Integer.class);
+
+            String url2 = "https://pan.baidu.com/rest/2.0/xpan/file?method=upload&access_token=" + getAccessToken() + "&type=tmpfile&path="
+                    + filePath + "&uploadid=" + uploadId + "&partseq=0";
+            logger.info("The upload-file-url is: {}", url2);
+            paramJson = new JSONObject();
+            try {
+                paramJson.put("file", Files.readAllBytes(file.toPath()));
+                JSON step2Json = HttpsClientUtils.httpJsonPost(url2, paramJson);
+                JSONObject obj2 = (JSONObject) step2Json;
+                errNo = obj2.getIntValue("errno");
+                String sliceMd5 = "";
+                if (errNo != 0) {
+                    resultMap.put("result", "Upload fail in step 2!");
+                    return resultMap;
+                } else {
+                    sliceMd5 = obj2.getString("md5");
+                    logger.info("slice block's md5: {}", sliceMd5);
+                }
+            } catch (IOException e) {
+                logger.error("Fail to read file: {}", file.getAbsolutePath(), e);
+            }
+
+            String url3 = "https://pan.baidu.com/rest/2.0/xpan/file?method=create&access_token=" + getAccessToken();
+            logger.info("The after-upload-file-url is: {}", url3);
+            paramJson = new JSONObject();
+            paramJson.put("path", filePath);
+            paramJson.put("size", file.length());
+            paramJson.put("isdir", 0);
+//            paramJson.put("uploadid", uploadId);
+            paramJson.put("rtype", 3);
+            JSON step3Json = HttpsClientUtils.httpJsonPost(url3, paramJson);
+            resultMap.put("result", step3Json);
+        }
+
         return resultMap;
     }
 
