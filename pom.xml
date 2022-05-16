@@ -17,6 +17,7 @@
 
     <modules>
         <module>awekit-core</module>
+        <module>awekit-tutorial</module>
     </modules>
 
     <properties>
