@@ -9,10 +9,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.ReflectionUtils;
 import org.springframework.util.StringUtils;
-import org.thymeleaf.util.NumberUtils;
 
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -189,11 +190,11 @@ public abstract class CommonUtils {
             return originalNum;
         }
         BigDecimal bg = new BigDecimal(originalNum);
-        return bg.setScale(fractionDigits, BigDecimal.ROUND_HALF_UP).doubleValue();
+        return bg.setScale(fractionDigits, RoundingMode.HALF_UP).doubleValue();
     }
 
     public static String formatPercent(Number originalNum, int fractionDigits) {
-        return NumberUtils.formatPercent(originalNum, 1, fractionDigits, Locale.CHINA);
+        return formatPercent(originalNum, 1, fractionDigits, Locale.CHINA);
     }
 
     public static List<String> generateTimeSequenceList(Date now, TimeUnit unit, int step, int size) {
@@ -261,5 +262,21 @@ public abstract class CommonUtils {
             return 0D;
         }
         return round(Double.parseDouble(valueObj.toString()), 2);
+    }
+
+    public static String formatPercent(final Number target, final Integer minIntegerDigits,
+                                       final Integer fractionDigits, final Locale locale) {
+        if (target == null) {
+            return null;
+        }
+
+        NumberFormat format = NumberFormat.getPercentInstance(locale);
+        format.setMinimumFractionDigits(fractionDigits);
+        format.setMaximumFractionDigits(fractionDigits);
+        if (minIntegerDigits != null) {
+            format.setMinimumIntegerDigits(minIntegerDigits);
+        }
+
+        return format.format(target);
     }
 }

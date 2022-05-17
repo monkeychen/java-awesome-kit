@@ -1,12 +1,14 @@
-package com.simiam.awekit.util;
+package com.simiam.awekit.web.util;
 
-import com.simiam.awekit.entity.ChartEntity;
+import com.simiam.awekit.web.entity.ChartEntity;
 import com.simiam.awekit.entity.GenericChartEntity;
 import com.simiam.awekit.entity.IndicatorModel;
 import com.simiam.awekit.entity.NameValuePair;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
+import com.simiam.awekit.util.BeanUtils;
+import com.simiam.awekit.util.CommonUtils;
 import com.simiam.awekit.web.echarts.*;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.springframework.util.CollectionUtils;

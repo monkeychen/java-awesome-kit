@@ -1,4 +1,4 @@
-package com.simiam.awekit.entity;
+package com.simiam.awekit.web.entity;
 
 /**
  * <p>Title: ChartEntity</p>

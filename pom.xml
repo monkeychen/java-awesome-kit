@@ -17,6 +17,9 @@
 
     <modules>
         <module>awekit-core</module>
+        <module>awekit-web</module>
+        <module>awekit-websocket</module>
+        <module>awekit-security</module>
         <module>awekit-tutorial</module>
     </modules>
 
@@ -81,6 +84,12 @@
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>1.2.7</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring-boot-web-starter</artifactId>
+                <version>1.4.2</version>
             </dependency>
 
             <dependency>
@@ -159,6 +168,16 @@
                 <groupId>org.apache.hadoop</groupId>
                 <artifactId>hadoop-mapreduce-client-core</artifactId>
                 <version>${hadoop.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.simiam.awekit</groupId>
+                <artifactId>awekit-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.simiam.awekit</groupId>
+                <artifactId>awekit-web</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -1,4 +1,4 @@
-package com.simiam.awekit.service;
+package com.simiam.awekit.web.service;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
