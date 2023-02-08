@@ -33,7 +33,7 @@ public class SecurityServiceImpl implements SecurityService {
 
     public static final Long NORMAL_USER = 4L;
 
-    public static final Long JZXN_USER = 7L;
+    public static final Long SP_USER = 7L;
 
     @Autowired
     private UserRepository userRepository;
@@ -94,7 +94,7 @@ public class SecurityServiceImpl implements SecurityService {
         if (CollectionUtils.isEmpty(roleList)) {
             roleList = Lists.newArrayList();
             user.setRoleList(roleList);
-            Long roleId = "性能室".equals(user.getDepartmentName()) ? JZXN_USER : NORMAL_USER;
+            Long roleId = "特殊".equals(user.getDepartmentName()) ? SP_USER : NORMAL_USER;
             Role targetRole = roleRepository.getOne(roleId);
             roleList.add(targetRole);
         }
