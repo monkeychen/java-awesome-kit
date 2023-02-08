@@ -20,7 +20,7 @@ import java.util.*;
 /**
  * <p>Title: ChartUtils</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2019</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2019</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/1/3 10:41</p>
  */

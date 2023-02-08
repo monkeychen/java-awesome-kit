@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 /**
  * <p>Title: NumberUtils</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2020</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2020</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2020/6/16 21:07</p>
  */

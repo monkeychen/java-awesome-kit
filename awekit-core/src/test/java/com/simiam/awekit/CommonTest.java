@@ -7,7 +7,7 @@ import java.util.UUID;
 /**
  * <p>Title: CommonTest</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2020</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2020</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2020/1/26 2:03 下午</p>
  */

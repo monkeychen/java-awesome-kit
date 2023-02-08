@@ -3,7 +3,7 @@ package com.simiam.awekit.web.echarts;
 /**
  * <p>Title: ChartBasicInfo</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2020</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2020</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2020/3/5 11:02 下午</p>
  */

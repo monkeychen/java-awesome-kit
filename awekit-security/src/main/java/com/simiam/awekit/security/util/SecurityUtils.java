@@ -32,7 +32,7 @@ import java.util.stream.Collectors;
 /**
  * <p>Title: SecurityUtils</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2019</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2019</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/12/17 9:28 上午</p>
  */
@@ -140,7 +140,7 @@ public abstract class SecurityUtils extends org.apache.shiro.SecurityUtils {
     }
 
     public static String generateId(String moduleName) {
-        return "FMCC-" + moduleName + "-" + DateFormatUtils.format(new Date(), "yyyyMMddHHmmssSSS");
+        return "SIMIAM-" + moduleName + "-" + DateFormatUtils.format(new Date(), "yyyyMMddHHmmssSSS");
     }
 
     public static <E> E setProperty(E entity, String fieldName, Object fieldValue) {

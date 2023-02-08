@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 /**
  * <p>Title: AwekitLauncher</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2018</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2018</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/4/24 上午10:49</p>
  */

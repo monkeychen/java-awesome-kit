@@ -14,7 +14,7 @@ import javax.script.ScriptException;
 /**
  * <p>Title: ScriptEngineTest</p>
  * <p>Description:使用脚本引擎Nashorn执行javascript代码</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2020</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2020</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2020/7/7 9:12</p>
  */

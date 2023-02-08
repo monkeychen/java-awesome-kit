@@ -31,7 +31,7 @@ import java.util.Map;
 /**
  * <p>Title: PlatformEnvironmentPostProcessor</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2019</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2019</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/5/13 14:50</p>
  */

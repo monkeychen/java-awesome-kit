@@ -5,7 +5,7 @@ import base.Student
 /**
  * <p>Title: Test07_DataType</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2022</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2022</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2022/9/12 18:57</p>
  */

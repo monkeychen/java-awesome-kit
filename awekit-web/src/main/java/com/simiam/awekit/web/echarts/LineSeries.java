@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * <p>Title: LineSeries</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2018</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2018</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2018/10/31 15:42</p>
  */

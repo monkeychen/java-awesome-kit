@@ -5,7 +5,7 @@ import com.google.common.base.MoreObjects;
 /**
  * <p>Title: Notification</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2020</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2020</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2020/2/29 1:31 下午</p>
  */

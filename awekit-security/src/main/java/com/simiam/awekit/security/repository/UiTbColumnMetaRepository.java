@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * <p>Title: UiTbColumnMetaRepository</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2020</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2020</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2020/3/31 10:44 上午</p>
  */

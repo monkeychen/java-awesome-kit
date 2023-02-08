@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * <p>Title: CityIndicatorLineSeriesProvider</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2019</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2019</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/7/2 15:00</p>
  */

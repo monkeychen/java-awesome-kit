@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * <p>Title: FtpClient</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2019</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2019</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/10/17 17:50</p>
  */

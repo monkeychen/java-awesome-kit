@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * <p>Title: TimeType</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2018</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2018</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2018/12/4 15:12</p>
  */

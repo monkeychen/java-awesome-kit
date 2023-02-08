@@ -33,7 +33,7 @@ import java.util.Optional;
 /**
  * <p>Title: SecurityController</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2019</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2019</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/12/18 4:49 下午</p>
  */

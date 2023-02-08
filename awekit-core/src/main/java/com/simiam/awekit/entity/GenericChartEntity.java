@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * <p>Title: GenericChartEntity</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2020</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2020</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2020/3/5 10:26 下午</p>
  */

@@ -8,7 +8,7 @@ import javax.persistence.*;
 /**
  * <p>Title: Setting</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2019</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2019</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/12/26 4:33 下午</p>
  */

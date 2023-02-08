@@ -9,7 +9,7 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 /**
  * <p>Title: WebSocketConfiguration</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2021</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2021</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2021/7/27 15:21</p>
  */

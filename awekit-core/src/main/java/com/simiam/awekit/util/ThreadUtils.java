@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 /**
  * <p>Title: ThreadUtils</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2019</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2019</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/10/15 11:37</p>
  */

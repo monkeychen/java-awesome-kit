@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 /**
  * <p>Title: SystemServiceImpl</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2019</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2019</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/12/26 4:54 下午</p>
  */

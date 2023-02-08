@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * <p>Title: CommonUtils</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2018</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2018</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2018/10/19 下午11:26</p>
  */

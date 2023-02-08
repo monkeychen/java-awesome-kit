@@ -31,7 +31,7 @@ import java.util.List;
 /**
  * <p>Title: HttpClientUtils</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2019</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2019</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/8/5 11:30</p>
  */

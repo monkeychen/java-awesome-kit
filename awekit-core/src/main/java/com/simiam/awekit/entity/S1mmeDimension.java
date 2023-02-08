@@ -3,7 +3,7 @@ package com.simiam.awekit.entity;
 /**
  * <p>Title: S1mmeDimension</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2018</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2018</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2018/12/4 16:54</p>
  */

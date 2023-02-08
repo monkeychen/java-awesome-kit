@@ -3,7 +3,7 @@ package com.simiam.awekit.util;
 /**
  * <p>Title: StringUtils</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2020</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2020</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2020/6/24 17:41</p>
  */

@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * <p>Title: Title</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2018</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2018</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2018/10/31 9:03</p>
  */

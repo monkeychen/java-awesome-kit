@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * <p>Title: IndicatorEnum</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2018</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2018</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2018/11/5 11:15</p>
  */

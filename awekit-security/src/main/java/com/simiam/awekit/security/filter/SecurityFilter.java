@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * <p>Title: SecurityFilter</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2019</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2019</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/12/20 8:48 上午</p>
  */

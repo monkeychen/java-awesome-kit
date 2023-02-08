@@ -3,7 +3,7 @@ package base
 /**
  * <p>Title: Student</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2022</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2022</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2022/9/12 19:37</p>
  */

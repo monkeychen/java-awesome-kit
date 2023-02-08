@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 /**
  * <p>Title: DepartmentRepository</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2021</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2021</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2021/12/8 10:44</p>
  */

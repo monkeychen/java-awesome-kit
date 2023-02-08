@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * <p>Title: DimensionType</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2018</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2018</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2018/11/20 8:44 PM</p>
  */

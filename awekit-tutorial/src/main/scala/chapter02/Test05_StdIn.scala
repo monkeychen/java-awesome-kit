@@ -5,7 +5,7 @@ import scala.io.StdIn
 /**
  * <p>Title: Test05_StdIn</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2022</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2022</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2022/9/10 00:19</p>
  */

@@ -25,7 +25,7 @@ import java.util.Optional;
 /**
  * <p>Title: UserController</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2019</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2019</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2019/12/20 9:20 下午</p>
  */
@@ -57,7 +57,7 @@ public class UserController extends AbstractSecurityController {
         ResponseBody<Map<String, Object>> responseBody = new ResponseBody<>(ResponseCode.CODE_OK, ResponseCode.MSG_OK);
         Map<String, Object> dataMap = Maps.newHashMap();
         responseBody.setData(dataMap);
-        String storedInviteCode = Awekit.getEnvProperty("dss.register.invite.code", "Cmcc@2020");
+        String storedInviteCode = Awekit.getEnvProperty("dss.register.invite.code", "SIMIAM@2020");
         if (!storedInviteCode.equals(user.getInviteCode())) {
             responseBody.setCode(ResponseCode.CODE_BUSINESS_ERROR);
             responseBody.setMessage("邀请码不正确，请联系管理员！");

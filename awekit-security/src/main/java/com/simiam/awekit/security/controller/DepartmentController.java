@@ -24,7 +24,7 @@ import java.util.Optional;
 /**
  * <p>Title: DepartmentController</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2021</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2021</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2021/12/10 11:19</p>
  */

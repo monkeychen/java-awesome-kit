@@ -29,7 +29,7 @@ import java.util.Map;
 /**
  * <p>Title: BaiduPanController</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2021</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2021</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2021/12/4 8:34 下午</p>
  */

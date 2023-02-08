@@ -8,7 +8,7 @@ import java.util.concurrent.*;
 /**
  * <p>Title: ConcurrentUtils</p>
  * <p>Description:</p>
- * <p>Copyright: FJ.CMCC Co., Ltd. (c) 2022</p>
+ * <p>Copyright: FJ.SIMIAM Co., Ltd. (c) 2022</p>
  * <p>@Author: chenzhian </p>
  * <p>@Date: 2022/1/20 18:40</p>
  */
